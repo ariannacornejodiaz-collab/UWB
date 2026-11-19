@@ -1,0 +1,57 @@
+{
+  "name": "rf",
+  "title": "Random Forest",
+  "data": "data\\synthetic",
+  "data_path": "C:\\Users\\AriannaCornejoDíaz\\Downloads\\uwb ML-20261020T112726Z-1-001\\uwb ML\\data\\synthetic",
+  "data_fingerprint": "ddb17c585e231fc4689c34b1c1f9e08261d0e8fb3db8ce769a79033feb256731",
+  "source_fingerprint": "0b79f77ee4a82991487b9c4880ee9b971010e8ebe5ab99a31ce51d13b3828cd2",
+  "environment": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.1"
+  },
+  "group": "session",
+  "folds": 5,
+  "tuned": false,
+  "n_windows": 1500,
+  "n_sessions": 60,
+  "windows_per_class": {
+    "outside": 900,
+    "inside": 600
+  },
+  "accuracy": 0.9907,
+  "balanced_accuracy": 0.9883,
+  "precision_inside": 1.0,
+  "recall_inside": 0.9767,
+  "f1_inside": 0.9882,
+  "false_alarm_rate": 0.0,
+  "miss_rate": 0.0233,
+  "roc_auc": 1.0,
+  "by_scenario": {
+    "dentro_andando": 1.0,
+    "dentro_quieta": 0.9533,
+    "fuera": 1.0,
+    "vacia": 1.0
+  },
+  "confusion_matrix": {
+    "labels": [
+      "inside",
+      "outside"
+    ],
+    "values": [
+      [
+        586,
+        14
+      ],
+      [
+        0,
+        900
+      ]
+    ]
+  },
+  "best_params": null,
+  "fold_params": null,
+  "cv_seconds": 13.6,
+  "ms_per_window": 0.039,
+  "created": "2026-10-29 13:26:12"
+}

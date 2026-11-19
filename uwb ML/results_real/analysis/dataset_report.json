@@ -1,0 +1,133 @@
+{
+  "data": "C:\\Users\\AriannaCornejoDíaz\\Downloads\\uwb ML-20261020T112726Z-1-001\\uwb ML\\data\\real",
+  "cir_block": 0,
+  "window_s": 6.0,
+  "hop_s": 1.0,
+  "n_recordings": 2,
+  "windows_per_class": {
+    "inside": 209
+  },
+  "suggested_group": "session",
+  "n_usable_groups": 2,
+  "ready_for_training": false,
+  "blockers": [
+    "cir_dentro_20261008_134626.csv: room_depth_m debe estar entre 0.45 y 17.10 m",
+    "cir_dentro_20261008_134814.csv: room_depth_m debe estar entre 0.45 y 17.10 m",
+    "Faltan ventanas de las clases: outside. Añadir grabaciones reales; no relabelar las existentes."
+  ],
+  "notices": [
+    "cir_dentro_20261008_134626.csv: Falta person; no se puede analizar ese factor.",
+    "cir_dentro_20261008_134626.csv: Falta activity; no se puede analizar ese factor.",
+    "cir_dentro_20261008_134626.csv: Intervalos pc_time irregulares: pueden reflejar la recepción en el PC, no necesariamente el muestreo del radar. Confirmar cir_ts antes de remuestrear.",
+    "cir_dentro_20261008_134626.csv: Los primeros 13 s tienen mucha más variación que el resto. Inspeccionar el arranque; no se ha recortado ni atribuido a una causa.",
+    "cir_dentro_20261008_134814.csv: Falta person; no se puede analizar ese factor.",
+    "cir_dentro_20261008_134814.csv: Falta activity; no se puede analizar ese factor.",
+    "cir_dentro_20261008_134814.csv: Intervalos pc_time irregulares: pueden reflejar la recepción en el PC, no necesariamente el muestreo del radar. Confirmar cir_ts antes de remuestrear.",
+    "SVM y --tune requieren al menos 3 grupos en total, con ambas clases en los entrenamientos internos.",
+    "Tener ambas clases globalmente no garantiza que cada pliegue sea válido; el entrenamiento comprueba también las clases por grupo."
+  ],
+  "recordings": [
+    {
+      "file": "cir_dentro_20261008_134626.csv",
+      "room": "sala1",
+      "session": "cir_dentro_20261008_134626",
+      "blockers": [
+        "room_depth_m debe estar entre 0.45 y 17.10 m"
+      ],
+      "notices": [
+        "Falta person; no se puede analizar ese factor.",
+        "Falta activity; no se puede analizar ese factor.",
+        "Intervalos pc_time irregulares: pueden reflejar la recepción en el PC, no necesariamente el muestreo del radar. Confirmar cir_ts antes de remuestrear.",
+        "Los primeros 13 s tienen mucha más variación que el resto. Inspeccionar el arranque; no se ha recortado ni atribuido a una causa."
+      ],
+      "n_frames": 1504,
+      "elapsed_s": 75.154,
+      "frame_rate_hz": 19.998935519067516,
+      "raw_labels": {
+        "dentro": 1504
+      },
+      "lost_frames": 0,
+      "rx_ant": [
+        1
+      ],
+      "interval_ms": {
+        "min": 2.0000000000000018,
+        "median": 49.99999999999982,
+        "p95": 62.89999999999929,
+        "max": 146.0
+      },
+      "long_intervals": [
+        {
+          "after_frame": 2,
+          "t_s": 0.099,
+          "interval_ms": 146.0
+        },
+        {
+          "after_frame": 254,
+          "t_s": 12.7,
+          "interval_ms": 85.00000000000085
+        },
+        {
+          "after_frame": 400,
+          "t_s": 20.001,
+          "interval_ms": 89.99999999999986
+        },
+        {
+          "after_frame": 816,
+          "t_s": 40.802,
+          "interval_ms": 76.99999999999818
+        }
+      ],
+      "candidate_windows": 70,
+      "homogeneous_windows": 70,
+      "coupling_peak_tap": 5,
+      "startup_13s_residual_power_ratio": 78.29220383161618
+    },
+    {
+      "file": "cir_dentro_20261008_134814.csv",
+      "room": "sala1",
+      "session": "cir_dentro_20261008_134814",
+      "blockers": [
+        "room_depth_m debe estar entre 0.45 y 17.10 m"
+      ],
+      "notices": [
+        "Falta person; no se puede analizar ese factor.",
+        "Falta activity; no se puede analizar ese factor.",
+        "Intervalos pc_time irregulares: pueden reflejar la recepción en el PC, no necesariamente el muestreo del radar. Confirmar cir_ts antes de remuestrear."
+      ],
+      "n_frames": 2892,
+      "elapsed_s": 144.556,
+      "frame_rate_hz": 19.99916987188356,
+      "raw_labels": {
+        "dentro": 2892
+      },
+      "lost_frames": 0,
+      "rx_ant": [
+        1
+      ],
+      "interval_ms": {
+        "min": 3.0000000000001137,
+        "median": 49.99999999999716,
+        "p95": 57.00000000000216,
+        "max": 91.99999999999875
+      },
+      "long_intervals": [
+        {
+          "after_frame": 1702,
+          "t_s": 85.101,
+          "interval_ms": 79.00000000000773
+        },
+        {
+          "after_frame": 1797,
+          "t_s": 89.861,
+          "interval_ms": 91.99999999999875
+        }
+      ],
+      "candidate_windows": 139,
+      "homogeneous_windows": 139,
+      "coupling_peak_tap": 5,
+      "startup_13s_residual_power_ratio": 1.0450352774875942
+    }
+  ],
+  "interpretation": "Potencias residuales sin unidades calibradas. Distancias basadas en config.py; no estiman la profundidad ni identifican a una persona. El informe no entrena ni valida un modelo de presencia."
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Radar UWB</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main>
+  <canvas id="radar" width="900" height="560"></canvas>
+  <aside>
+    <div id="door" class="closed">PUERTA CERRADA</div>
+    <dl>
+      <dt>Clase</dt><dd id="label">-</dd>
+      <dt>P(positiva)</dt><dd id="prob">-</dd>
+      <dt>Distancia</dt><dd id="dist">-</dd>
+      <dt>Ángulo</dt><dd id="aoa">-</dd>
+      <dt>Detector placa</dt><dd id="board">-</dd>
+      <dt>Fuente</dt><dd id="source">-</dd>
+      <dt>Conexión</dt><dd id="conn">desconectado</dd>
+    </dl>
+    <div id="warn"></div>
+    <h3>Histórico</h3>
+    <ul id="history"></ul>
+  </aside>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>

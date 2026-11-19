@@ -1,0 +1,43 @@
+{
+  "name": "rf",
+  "title": "Random Forest",
+  "evaluation": "holdout",
+  "trained_during_evaluation": false,
+  "model_path": "C:\\Users\\AriannaCornejoDíaz\\Downloads\\uwb ML-20261020T112726Z-1-001\\uwb ML\\results\\rf\\model.joblib",
+  "training_data_fingerprint": "ddb17c585e231fc4689c34b1c1f9e08261d0e8fb3db8ce769a79033feb256731",
+  "test_data": "C:\\Users\\AriannaCornejoDíaz\\Downloads\\uwb ML-20261020T112726Z-1-001\\uwb ML\\data\\synthetic_holdout\\ml_dataset.csv",
+  "test_data_fingerprint": "97f942968619051b467b667534d038c7226385c670a482f089b61073a0c5c3be",
+  "n_windows": 500,
+  "created": "2026-10-29 13:27:08",
+  "accuracy": 1.0,
+  "balanced_accuracy": 1.0,
+  "precision_inside": 1.0,
+  "recall_inside": 1.0,
+  "f1_inside": 1.0,
+  "false_alarm_rate": 0.0,
+  "miss_rate": 0.0,
+  "roc_auc": 1.0,
+  "by_scenario": {
+    "dentro_andando": 1.0,
+    "dentro_quieta": 1.0,
+    "fuera": 1.0,
+    "vacia": 1.0
+  },
+  "confusion_matrix": {
+    "labels": [
+      "inside",
+      "outside"
+    ],
+    "values": [
+      [
+        200,
+        0
+      ],
+      [
+        0,
+        300
+      ]
+    ]
+  },
+  "limitation": "Solo evaluación sintética si los datos son simulados; no valida el radar real"
+}

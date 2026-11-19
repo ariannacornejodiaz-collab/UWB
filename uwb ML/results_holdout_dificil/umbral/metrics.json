@@ -1,0 +1,43 @@
+{
+  "name": "umbral",
+  "title": "Umbral (DSP)",
+  "evaluation": "holdout",
+  "trained_during_evaluation": false,
+  "model_path": "C:\\Users\\AriannaCornejoDíaz\\Downloads\\uwb ML-20261020T112726Z-1-001\\uwb ML\\results\\umbral\\model.joblib",
+  "training_data_fingerprint": "ddb17c585e231fc4689c34b1c1f9e08261d0e8fb3db8ce769a79033feb256731",
+  "test_data": "C:\\Users\\AriannaCornejoDíaz\\Downloads\\uwb ML-20261020T112726Z-1-001\\uwb ML\\data\\synthetic_holdout\\ml_dataset_dificil.csv",
+  "test_data_fingerprint": "4db6ec5341384e2e97884e9fa1e841f10c2ee830dee7bc1101c98f7574d52fca",
+  "n_windows": 500,
+  "created": "2026-10-29 13:27:16",
+  "accuracy": 0.736,
+  "balanced_accuracy": 0.7383,
+  "precision_inside": 0.6466,
+  "recall_inside": 0.75,
+  "f1_inside": 0.6944,
+  "false_alarm_rate": 0.2733,
+  "miss_rate": 0.25,
+  "roc_auc": 0.7982,
+  "by_scenario": {
+    "dentro_andando": 1.0,
+    "dentro_quieta": 0.5,
+    "fuera": 0.965,
+    "vacia": 0.25
+  },
+  "confusion_matrix": {
+    "labels": [
+      "inside",
+      "outside"
+    ],
+    "values": [
+      [
+        150,
+        50
+      ],
+      [
+        82,
+        218
+      ]
+    ]
+  },
+  "limitation": "Solo evaluación sintética si los datos son simulados; no valida el radar real"
+}

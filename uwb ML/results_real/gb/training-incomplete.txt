@@ -1,0 +1,2 @@
+Entrenamiento iniciado 2026-10-22 12:50:53, datos: data\real
+No uses los resultados anteriores hasta completar un nuevo entrenamiento.

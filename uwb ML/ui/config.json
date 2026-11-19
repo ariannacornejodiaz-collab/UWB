@@ -1,0 +1,14 @@
+{
+  "angle_min_deg": -60,
+  "angle_max_deg": 60,
+  "max_range_m": 8,
+  "angle_step_deg": 15,
+  "range_step_m": 1,
+  "targets": ["person"],
+  "origin": "antenna",
+  "blind_zone_m": 0.5,
+  "unlock_radius_m": 1.5,
+  "useful_max_m": 3.6,
+  "positive_label": "inside",
+  "stale_after_s": 2.0
+}

@@ -1,0 +1,11 @@
+{
+  "generator": "generate_synthetic.py",
+  "command": "python generate_synthetic.py --out data/synthetic_holdout --reps 4 --seed 2026 --name-prefix holdout_",
+  "format": "ml_dataset.csv (session, scenario, idx, time_epoch, rx1_i_*, rx1_q_*)",
+  "room": "sala (única)",
+  "seed": 2026,
+  "reps": 4,
+  "duration_s": 30,
+  "session_prefix": "holdout_",
+  "note": "Sintético: demuestra que el código funciona, no valida el modelo en el mundo real."
+}

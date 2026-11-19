@@ -1,0 +1,14 @@
+body { margin: 0; font-family: Segoe UI, sans-serif; background: #12161c; color: #e6e9ee; }
+main { display: flex; gap: 16px; padding: 16px; }
+canvas { background: #0b0e12; border-radius: 8px; }
+aside { width: 280px; }
+#door { padding: 14px; text-align: center; font-weight: 700; border-radius: 8px; margin-bottom: 12px; }
+#door.closed { background: #4a1f24; color: #ff9aa2; }
+#door.open { background: #1d4d2c; color: #8dffae; }
+dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; margin: 0; }
+dt { color: #8b94a3; }
+dd { margin: 0; font-variant-numeric: tabular-nums; }
+#warn { margin-top: 10px; min-height: 20px; color: #ffcc66; font-size: 14px; }
+h3 { margin: 16px 0 6px; font-size: 14px; color: #8b94a3; }
+#history { list-style: none; padding: 0; margin: 0; font-size: 12px; max-height: 220px; overflow: hidden; }
+#history li { padding: 2px 0; color: #aab2bf; }

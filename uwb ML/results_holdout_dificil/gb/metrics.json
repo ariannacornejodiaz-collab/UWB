@@ -1,0 +1,43 @@
+{
+  "name": "gb",
+  "title": "Gradient Boosting",
+  "evaluation": "holdout",
+  "trained_during_evaluation": false,
+  "model_path": "C:\\Users\\AriannaCornejoDíaz\\Downloads\\uwb ML-20261020T112726Z-1-001\\uwb ML\\results\\gb\\model.joblib",
+  "training_data_fingerprint": "ddb17c585e231fc4689c34b1c1f9e08261d0e8fb3db8ce769a79033feb256731",
+  "test_data": "C:\\Users\\AriannaCornejoDíaz\\Downloads\\uwb ML-20261020T112726Z-1-001\\uwb ML\\data\\synthetic_holdout\\ml_dataset_dificil.csv",
+  "test_data_fingerprint": "4db6ec5341384e2e97884e9fa1e841f10c2ee830dee7bc1101c98f7574d52fca",
+  "n_windows": 500,
+  "created": "2026-10-29 13:27:15",
+  "accuracy": 0.828,
+  "balanced_accuracy": 0.8558,
+  "precision_inside": 0.7007,
+  "recall_inside": 0.995,
+  "f1_inside": 0.8223,
+  "false_alarm_rate": 0.2833,
+  "miss_rate": 0.005,
+  "roc_auc": 0.7825,
+  "by_scenario": {
+    "dentro_andando": 0.99,
+    "dentro_quieta": 1.0,
+    "fuera": 1.0,
+    "vacia": 0.15
+  },
+  "confusion_matrix": {
+    "labels": [
+      "inside",
+      "outside"
+    ],
+    "values": [
+      [
+        199,
+        1
+      ],
+      [
+        85,
+        215
+      ]
+    ]
+  },
+  "limitation": "Solo evaluación sintética si los datos son simulados; no valida el radar real"
+}
